@@ -18,6 +18,16 @@ This repository contains a PyTorch project that demonstrates the training and ev
 
 ## Dataset
 The dataset used in this project is the [Fashion MNIST dataset](https://github.com/zalandoresearch/fashion-mnist), a dataset of Zalando's article images consisting of a training set of 60,000 examples and a test set of 10,000 examples. Each example is a 28x28 grayscale image, associated with a label from 10 classes.
+- T-shirt/top (label 0)
+- Trouser (label 1)
+- Pullover (label 2)
+- Dress (label 3)
+- Coat (label 4)
+- Sandal (label 5)
+- Shirt (label 6)
+- Sneaker (label 7)
+- Bag (label 8)
+- Ankle boot (label 9)
 
 ## Model Architecture
 The model used in this project is a fully connected neural network with the following architecture:
