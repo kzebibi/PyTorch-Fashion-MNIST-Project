@@ -24,7 +24,7 @@ The model used in this project is a fully connected neural network with the foll
 
 ```python
 NeuralNet(
-  (flatten): Flatten(start_dim=2, end_dim=-1)
+  (flatten): Flatten()
   (stack): Sequential(
     (0): Linear(in_features=784, out_features=512, bias=True)
     (1): ReLU()
