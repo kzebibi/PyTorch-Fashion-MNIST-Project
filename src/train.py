@@ -1,7 +1,8 @@
 import torch
 from torch import nn
+
+from app.models.model import NeuralNet
 from src.data import train_loader
-from models.model import NeuralNet
 
 
 def train_model(dataloader, model, criterion, optimizer, epochs, device="cpu"):
@@ -69,5 +70,5 @@ if __name__ == "__main__":
     # Train teh model
     train_model(train_loader, model, criterion, optimizer, epochs, device)
     # Save the state dict of model
-    torch.save(model.state_dict(), "../artifacts/models/model.pth")
+    torch.save(model.state_dict(), "../app/models/model.pth")
     print("Saved PyTorch Model State to model.pth")

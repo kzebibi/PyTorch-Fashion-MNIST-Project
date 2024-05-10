@@ -1,15 +1,14 @@
 import torch
 from torch import nn
 
-from models.model import NeuralNet
+from app.models.model import NeuralNet
 from src.data import test_loader
-
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 dataloader = test_loader
 criterion = nn.CrossEntropyLoss()
 model = NeuralNet().to(device)
-model.load_state_dict(torch.load("../artifacts/models/model.pth"))
+model.load_state_dict(torch.load("../app/models/model.pth"))
 
 
 def eval_test(dataloader, model, criterion):
@@ -56,10 +55,9 @@ def eval_test(dataloader, model, criterion):
     return test_loss, correct
 
 
-
 if __name__ == "__main__":
     dataloader = test_loader
     criterion = nn.CrossEntropyLoss()
     model = NeuralNet().to(device)
-    model.load_state_dict(torch.load("../artifacts/models/model.pth"))
+    model.load_state_dict(torch.load("../app/models/model.pth"))
     eval_test(dataloader, model, criterion)

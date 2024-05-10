@@ -23,3 +23,6 @@ class NeuralNet(nn.Module):
         x = self.flatten(x)
         outputs = self.stack(x)
         return outputs
+
+NeuralNet = NeuralNet()
+print(NeuralNet)
