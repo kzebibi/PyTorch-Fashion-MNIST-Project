@@ -50,7 +50,7 @@ def eval_test(dataloader, model, criterion):
 
     # Print results
     print(f"Test loss: {test_loss:.4f}")
-    print(f"Train Accuracy: {100 * correct:.2f}%")
+    print(f"Test Accuracy: {100 * correct:.2f}%")
 
     return test_loss, correct
 

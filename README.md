@@ -51,7 +51,6 @@ The results of the training and evaluation process are visualized in the followi
 
 ### Test Accuracy
 ![test.png](images/test.png)
-
 ### Predictions on Test Data
 ![predict.png](images/predict.png)
 
